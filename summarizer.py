@@ -9,12 +9,6 @@ import sys
 def read_article(file):
 
     with open(file, 'r', encoding='utf-8') as f:
-        '''
-        fx = f.readlines()
-        fcontent = []
-        for line in fx:
-            fcontent = fcontent + line.split(". ")
-        '''
 
         fcontent = f.read().split('. ')
         sentences = []
